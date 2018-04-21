@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/traffic/index",
+    "pages/raiders/index",
+    "pages/aboutme/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#009ACD",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "途游万里",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#ffffff",
+    "backgroundColor":"#009ACD",
+    "selectedColor":"#FFB90F",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/traffic/index",
+        "text": "出现交通"
+      },
+      {
+        "pagePath": "pages/raiders/index",
+        "text": "旅行攻略"
+      },
+      {
+        "pagePath": "pages/aboutme/index",
+        "text": "关于我们"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

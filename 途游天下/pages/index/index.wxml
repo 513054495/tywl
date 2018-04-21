@@ -1,0 +1,35 @@
+<scroll-view>
+<swiper indicator-dots="{{indicatorDots}}" style='height:200px'
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" model="top left" style="width: {{imageWidth}}px;"  bindload="imageLoad" />
+    </swiper-item>
+  </block>
+</swiper>
+<view>
+    <text style="margin:7px;font-size:14px;">热门城市</text>
+</view>
+<view >
+  <image src="../resources/e.png" model="top left" style="width: {{imageWidth1}}px;height:70px;margin:5px;"></image>
+  <image src="../resources/f.png" model="top left" style="width: {{imageWidth1}}px;height:70px;margin:5px;"></image>
+  <image src="../resources/g.png" model="top left" style="width: {{imageWidth1}}px;height:70px;margin:5px;"></image>
+  <image src="../resources/h.png" model="top left" style="width: {{imageWidth1}}px;height:70px;margin:5px;"></image>
+</view>
+<view >
+  <image src="../resources/e.png" model="top left" style="width: {{imageWidth1}}px;height:70px;margin:5px;"></image>
+  <image src="../resources/f.png" model="top left" style="width: {{imageWidth1}}px;height:70px;margin:5px;"></image>
+  <image src="../resources/g.png" model="top left" style="width: {{imageWidth1}}px;height:70px;margin:5px;"></image>
+  <image src="../resources/h.png" model="top left" style="width: {{imageWidth1}}px;height:70px;margin:5px;"></image>
+</view>
+<view>
+    <text style="margin:7px;font-size:14px;">热门游记</text>
+</view>
+<block wx:for="{{list}}">
+    <view class="bc_green"  style="padding:17px;">
+       <text class="title" style="margin:7px;font-size:14px;">{{item}}</text>
+    </view>
+</block>
+  
+</scroll-view>
+
